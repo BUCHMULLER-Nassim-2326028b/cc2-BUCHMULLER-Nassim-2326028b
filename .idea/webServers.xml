@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e85cb9e1-036e-4ffa-ac97-bbe8ab70c97a" name="cc2">
+        <fileTransfer rootFolder="/home/cc2-buchmuller" accessType="SFTP" host="ssh-cc2-buchmuller.alwaysdata.net" port="22" sshConfigId="73e23d5d-5318-4eec-af5a-9d04b6435466" sshConfig="cc2-buchmuller@ssh-cc2-buchmuller.alwaysdata.net:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

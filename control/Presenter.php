@@ -13,10 +13,40 @@ class Presenter
     {
         $content = null;
         if ($this->annoncesCheck->getAnnoncesTxt() != null) {
-            $content = '<h1>List of Posts</h1>  <ul>';
+            $content = '<h1>Liste des posts</h1>  <ul>';
             foreach ($this->annoncesCheck->getAnnoncesTxt() as $post) {
                 $content .= ' <li>';
                 $content .= '<a href="/index.php/post?id=' . $post['id'] . '">' . $post['title'] . '</a>';
+                $content .= ' </li>';
+            }
+            $content .= '</ul>';
+        }
+        return $content;
+    }
+
+    public function getAllAlternanceHTML()
+    {
+        $content = null;
+        if ($this->annoncesCheck->getAnnoncesTxt() != null) {
+            $content = '<h1>Liste d\'alternances</h1>  <ul>';
+            foreach ($this->annoncesCheck->getAnnoncesTxt() as $post) {
+                $content .= ' <li>';
+                $content .= '<a href="/index.php/companyAlternance?id=' . $post['id'] . '">' . $post['title'] . '</a>';
+                $content .= ' </li>';
+            }
+            $content .= '</ul>';
+        }
+        return $content;
+    }
+
+    public function getAllEmploiHTML()
+    {
+        $content = null;
+        if ($this->annoncesCheck->getAnnoncesTxt() != null) {
+            $content = '<h1>Liste d\'offre d\'emplois</h1>  <ul>';
+            foreach ($this->annoncesCheck->getAnnoncesTxt() as $post) {
+                $content .= ' <li>';
+                $content .= '<a href="/index.php/companyAlternance?id=' . $post['id'] . '">' . $post['title'] . '</a>';
                 $content .= ' </li>';
             }
             $content .= '</ul>';

@@ -1,0 +1,220 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 10px 40px 10px 40px;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.annonces-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.annonces-grid .post-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.annonces-grid .post-button:hover {
+    background-color: #0056b3;
+}
+
+.annonces-grid .post-button:active {
+    background-color: #004085;
+}
+
+.post-button .post-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-button .post-date {
+    font-size: 0.9em;
+}
+
+.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+textarea, input[type="text"], input[type="password"] {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Styles pour les messages */
+.messages-list, .sent-messages-list {
+    margin-bottom: 2em;
+}
+
+.message {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message .header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.message .content {
+    margin-bottom: 10px;
+}
+
+.message .reply-form {
+    margin-top: 10px;
+}
+
+/* Styles pour les sections */
+.author-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.author-section .author {
+    font-weight: bold;
+}
+
+.author-section .contact-button {
+    margin-left: auto;
+}
+
+.date {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.body {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 35px;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-left: -20px;
+    border-radius: 35px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+nav ul li a:active {
+    background-color: #0056b3;
+}
+
+/* adaptation au reponsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+}
+
+
+.error {
+    color: red;
+    font-weight: bold;
+}
